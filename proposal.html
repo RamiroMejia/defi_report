@@ -1,0 +1,671 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proposal - Defined Finance &#8212; DeFi Dashboard Follow and Forecast the Money</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Exploratory Data Analysis" href="eda.html" />
+    <link rel="prev" title="DeFi Dashboard: Follow and Forecast the Money" href="intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">DeFi Dashboard Follow and Forecast the Money</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   DeFi Dashboard: Follow and Forecast the Money
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Proposal - Defined Finance
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="eda.html">
+   Exploratory Data Analysis
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="feature_engineering.html">
+   Feature Engineering
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="modeling.html">
+   Modeling
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/proposal.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/RamiroMejia/ubc-mds"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/RamiroMejia/ubc-mds/issues/new?title=Issue%20on%20page%20%2Fproposal.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/RamiroMejia/ubc-mds/development?urlpath=tree/proposal/proposal.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#feature-engineering-and-model-selection-for-wallet-based-clustering">
+   Feature Engineering and Model Selection for Wallet-Based Clustering
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#executive-summary">
+   Executive Summary
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#i-introduction">
+   I. Introduction
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-blockchain">
+     What is Blockchain?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-decentralized-financing-defi">
+     What is Decentralized Financing (DeFi)?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ii-procedure-and-methodology">
+   II. Procedure and Methodology
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#objective-and-research-question">
+     Objective and Research Question
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-set-and-sampling-methodology">
+     Data Set and Sampling Methodology
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#feature-engineering">
+     Feature Engineering
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exploratory-data-analysis">
+     Exploratory Data Analysis
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#modeling-approach">
+     Modeling Approach
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#model-evaluation-metrics">
+     Model Evaluation Metrics
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#iii-discussion-and-conclusion">
+   III. Discussion and Conclusion
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#baseline-models-results">
+     Baseline Models Results
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#challenges">
+     Challenges
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#iv-expected-timeline">
+   IV. Expected Timeline
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Proposal - Defined Finance</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#feature-engineering-and-model-selection-for-wallet-based-clustering">
+   Feature Engineering and Model Selection for Wallet-Based Clustering
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#executive-summary">
+   Executive Summary
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#i-introduction">
+   I. Introduction
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-blockchain">
+     What is Blockchain?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-decentralized-financing-defi">
+     What is Decentralized Financing (DeFi)?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ii-procedure-and-methodology">
+   II. Procedure and Methodology
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#objective-and-research-question">
+     Objective and Research Question
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-set-and-sampling-methodology">
+     Data Set and Sampling Methodology
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#feature-engineering">
+     Feature Engineering
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exploratory-data-analysis">
+     Exploratory Data Analysis
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#modeling-approach">
+     Modeling Approach
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#model-evaluation-metrics">
+     Model Evaluation Metrics
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#iii-discussion-and-conclusion">
+   III. Discussion and Conclusion
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#baseline-models-results">
+     Baseline Models Results
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#challenges">
+     Challenges
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#iv-expected-timeline">
+   IV. Expected Timeline
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="proposal-defined-finance">
+<h1>Proposal - Defined Finance<a class="headerlink" href="#proposal-defined-finance" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="feature-engineering-and-model-selection-for-wallet-based-clustering">
+<h2>Feature Engineering and Model Selection for Wallet-Based Clustering<a class="headerlink" href="#feature-engineering-and-model-selection-for-wallet-based-clustering" title="Permalink to this headline">¶</a></h2>
+<p>UBC Master of Data Science Capstone Project - May-Jun 2022</p>
+<p>Berkay Bulut, Mohammadreza Mirzazadeh, Ramiro Mejia, Vadim Taskaev</p>
+<p>Mentor: Quan Nguyen</p>
+</div>
+<div class="section" id="executive-summary">
+<h2>Executive Summary<a class="headerlink" href="#executive-summary" title="Permalink to this headline">¶</a></h2>
+<p>Defined Ltd is a startup in the blockchain and de-centralized finance space. Defined is building a public data platform called DeFi dashboard that helps users to query chain data and interact with major blockchains. One of the long-term goals of the company is to create tools to help traders engage with the crypto-currency environment. This project aims to explore and leverage big data collected from major public blockchains. Our main goal is to cluster the wallets based on their summary characteristics, assumptions, and strategies using unsupervised learning techniques.</p>
+</div>
+<div class="section" id="i-introduction">
+<h2>I. Introduction<a class="headerlink" href="#i-introduction" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="what-is-blockchain">
+<h3>What is Blockchain?<a class="headerlink" href="#what-is-blockchain" title="Permalink to this headline">¶</a></h3>
+<p>Blockchain is a distributed database in which a record of transactions made is shared and verified among the nodes of a computer network. Technology allowed for invention and adoptation of digital assets and decentralized financing among many others</p>
+</div>
+<div class="section" id="what-is-decentralized-financing-defi">
+<h3>What is Decentralized Financing (DeFi)?<a class="headerlink" href="#what-is-decentralized-financing-defi" title="Permalink to this headline">¶</a></h3>
+<p>Decentralized Financing is a new form of trading and financing using blockchain. DeFi platforms allows for trading in Automated Market Maker with lowered fees and increased gains. Investors and traders deposit their money into pools (smart contracts) instead of trading against each unlike conventional exchange markets.</p>
+<p><img alt="fishy" src="_images/swap_image.jpeg" /></p>
+<p>These pools of capital can be used for various financial applications. Trader inputs Token A + some fee amount to retrieve desired Token B. For example inputs Ethereum to receive Bitcoin.
+A wallet can execute 3 types of transactions in DeFi:</p>
+<ul class="simple">
+<li><p>Swap: Swap token A for token B in a pool.</p></li>
+<li><p>Mint (Deposit): Deposit money into a pool.</p></li>
+<li><p>Burn (Withdraw): Withdraw money from a pool.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="ii-procedure-and-methodology">
+<h2>II. Procedure and Methodology<a class="headerlink" href="#ii-procedure-and-methodology" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="objective-and-research-question">
+<h3>Objective and Research Question<a class="headerlink" href="#objective-and-research-question" title="Permalink to this headline">¶</a></h3>
+<p>Given information collected across all major public blockchains, the project aims to develop wallet-specific engineered features and to use them to train an unsupervised learning model that would cluster wallets based on their underlying trading characteristics. Such clustering would allow to identify patterns in the trading assumptions, strategies, and key signals used by wallet-holders and segregate them on these characteristics along their overall profitability. In other words, we aim to reveal signature patterns in the trading behavior of more successful traders in a blockchain that distinguish them from less their less successful counterparts, and thus estimate patterns in the flow of capital.</p>
+<p>We state our <strong>research question</strong> as follows: “<em>How to best generate wallet clusters that identify successful traders and reveal common trading patterns among traders?</em>”</p>
+<p>The final product deliverables we aim from this projects are as follows. First, we will engineer wallet-based features from the transaction-based features provided and conduct exploratory data analysis, followed by any further transformation required to ensure their suitability for a machine learning application context. Second, we will use these engineered features as an input to an unsupervised machine learning clustering algorith, which will cluster wallets based on their relative resemblance. We will attempt to label them in a human-interpretable manner based on their summary characteristics. The combined scripts and reports will be structured in a the github repo provided: <a class="reference external" href="https://github.com/company-z/ubc-mds">https://github.com/company-z/ubc-mds</a>.</p>
+</div>
+<div class="section" id="data-set-and-sampling-methodology">
+<h3>Data Set and Sampling Methodology<a class="headerlink" href="#data-set-and-sampling-methodology" title="Permalink to this headline">¶</a></h3>
+<p>The data provided is comprised within a Snowflake relational database, and relating to a list of transaction-based observations. Transactions types include mint, burn, and swap transactions. From each transaction, the token pair transacted, the base token and USD transaction value, the transaction execution event time can be retrieved, along an array of other potentially relevant metrics, such as gas price and related labels.</p>
+<p>This size of this data set exceeds 400GB, and is not feasible to interact with in its entirety without leveraging a virtual machine. Rather, in order to facilitate collaborate development throughout this project, we have opted to randomly sample wallet-based data using SQL queries from the database at a scale that permits running scripts on our local machines. By drawing a representative sample of data from the data set and applying bootstrapping, we aim to benefit from Maximum Likelihood Estimation to get a sense the underlying data distributions.</p>
+</div>
+<div class="section" id="feature-engineering">
+<h3>Feature Engineering<a class="headerlink" href="#feature-engineering" title="Permalink to this headline">¶</a></h3>
+<p>A key success factor in developing a well-performing wallet-based clustering algorithm will require devising and engineering meaningful features from respective underlying transaction-based data. The raw data queried is structured such that each observation refers to a particular transaction, each of which is associated to a given wallet, and for each of which we know the transacted pair, amount, execution timestamp, and so on. The types of transactions include <em>Mint</em>, <em>Swap</em> and <em>Burn</em> transaction tables. However, our access to underlying data is least limited for <em>Swap</em> transactions with the liquidity pool.</p>
+<p>Aggregated wallet-based features of interest should convey insight on a given wallet holder’s summary statistics, trading signal assumptions, and overall strategy. To start, we engineer wallet-based features, with the option of refining and expanding the scope of feature engineering further in the coming milestones should it be deemed to improve model results. The following features will be further explored throughout the project milestone and its iterations:</p>
+<ul class="simple">
+<li><p>the count of transactions, per <em>mint</em>, <em>swap</em>, and <em>burn</em> transactions types, as well as their total,</p></li>
+<li><p>the count of wallet-to-wallet transactions,</p></li>
+<li><p>the count of transactions per active trading period,</p></li>
+<li><p>the total count of distinct tokens transacted,</p></li>
+<li><p>the degree to which wallet transactions deal with stable tokens (relative to non-stable tokens),</p>
+<ul>
+<li><p>weighted average of relative token market cap as proxy for risk tolerance in terms of the selection of tokens transacted with,</p></li>
+<li><p>weighted average of standard variance of token base price as a proxy for risk tolerance in terms of price fluctuations of tokens transacted with,</p></li>
+</ul>
+</li>
+<li><p>the trading consistency as a measure of the degree to which wallet transactions timestamps occur at even intervals over time,</p></li>
+<li><p>the average gas fee paid per wallet across its underlying transactions as a proxy for the aggressiveness of trade placement relative to other traders,</p>
+<ul>
+<li><p>n.b., as is, this feature is unlikely to derive any insight on wallet characteristics, as it rather reflect underlying transaction-based smart contract complexity and network activity, so we will only use it if we manage to derive more meaningful information from it,</p></li>
+</ul>
+</li>
+<li><p>the cumulative wallet profitability based on liquidity pool, mint, burn, and swap transactions, computed by updating the tokens held per wallet after every transaction and referencing its execution timestamp to derivate weighted average wallet valuation (from which profitability can be computed as a ratio),</p>
+<ul>
+<li><p>this would require keeping a dictonary of the amount of tokens held, updated after each transaction, along with the transaction timestamp.</p></li>
+</ul>
+</li>
+</ul>
+<p>Other features to potentially consider:</p>
+<ul class="simple">
+<li><p>the extent to which particular base token price signals are used for trading, e.g., preceeding trend in token over time prior to trade,</p></li>
+<li><p>the correlation of wallet transactions relative to traditional indicators.</p></li>
+</ul>
+</div>
+<div class="section" id="exploratory-data-analysis">
+<h3>Exploratory Data Analysis<a class="headerlink" href="#exploratory-data-analysis" title="Permalink to this headline">¶</a></h3>
+<p>As part of our data analysis, we are going to explore some feature relationships before adding them to the model. Our goal is to capture insights that will help us to discard or add variables to the model.  We can also utilize external data to compare and find useful patterns, for example, by checking the market price series of a cryptocurrency and how risk-averse is the trader based on its transactions in the blockchain during a window of time.</p>
+</div>
+<div class="section" id="modeling-approach">
+<h3>Modeling Approach<a class="headerlink" href="#modeling-approach" title="Permalink to this headline">¶</a></h3>
+<p><img alt="fishy" src="_images/approach.png" /></p>
+<p>Our approach to reaching our objectives is as follows:</p>
+<ol class="simple">
+<li><p>Performing research on data tables and extract</p></li>
+<li><p>Implementing data engineering and feature engineering skills to create <code class="docutils literal notranslate"><span class="pre">Wallet</span> <span class="pre">table</span></code> which has <code class="docutils literal notranslate"><span class="pre">wallet_ids</span></code> and their according features.</p></li>
+<li><p>Evaluating features that have been extracted for each wallet by performing EDA and some statistical analysis.</p></li>
+<li><p>Implementing an unsupervised learning model</p></li>
+<li><p>Assessing the performance of our model by measuring the interpretability of the clusters.</p></li>
+<li><p>Rerunning steps 1 to 5 to enhance model performance</p></li>
+<li><p>Delivering  final report and algorithm</p></li>
+</ol>
+<p>We elaborate on the modeling workflow below:</p>
+<ul class="simple">
+<li><p>First, we will fit a baseline model to generate benchmark model performance results, which we will then compare to further model iterations. A suitable baseline model of choice for this clustering algorithm is <em>K-Means</em>, an unsupervised learning technique that is both relatively simple and intuitive. To this end, we will use the scikit-learn library.</p></li>
+<li><p>Second, we will experiment with alternative more advanced clustering modeling techniques that may be better suited to capture more complex relationships among the data. We will use <em>Principal Component Analysis</em> (i.e., PCA) to apply dimensionality reduction to the engineered features and summarize pattern and insight from the features. We will then apply <em>Density-Based Spatial Clustering of Applications with Noise</em> (i.e., DBSCAN) to generate clusters by gathering insight on the density of observations within clusters, thus generating clusters that may possible be found to be more meaningful in terms of their interpretation. Finally, we will train an array of <em>Neural Network</em> models that will leverage the large volume of transaction-based data, though possible at the expense of model interpretability and challenges with parameter tuning. We will then select the model architecture that provides best overall fit to the data given the model evaluation metrics of choice, all while assessing the results generated in a human-interpretable manner.</p></li>
+<li><p>Third, we will aim to refine our model of choice by tuning its hyper-parameters, while possible also including an outlier detection pipeline to improve the generalization of results to new unseen observations.</p></li>
+</ul>
+<p>Throughout this modeling process, we will place particular attention on the following potential problems we envisage:</p>
+<ol class="simple">
+<li><p>with data being stored across a relational database, we will need to ensure that SQL queries of transactions are comprehensive for each given wallet,</p></li>
+<li><p>we will need to find a suitable trade-off between utilizing a sufficiently large window of underlying transactions while using an excessively large sample size,</p></li>
+<li><p>selecting most relevant variables by iteratively assessing the suitability of engineered features, and</p></li>
+<li><p>we will wrangle data and, fit and evaluate associated models in a manner that is mindful to big data virtual machine utilization best practices.</p></li>
+</ol>
+</div>
+<div class="section" id="model-evaluation-metrics">
+<h3>Model Evaluation Metrics<a class="headerlink" href="#model-evaluation-metrics" title="Permalink to this headline">¶</a></h3>
+<p>Since it is an unsupervised learning model, common supervised model evaluation metrics (i.e., recall, precision, f1-score) are not useful to measure the performance of the model. We plan to tackle this problem using different types of model evaluation strategies. Model evaluation in the context of unsupervised learning methods offers a way to pick suitable input hyper-parameters to the clustering algorithm, namely the number of clusters, rather than evaluate its performance per say.</p>
+<ul class="simple">
+<li><p>First, we plan to use internal model evaluation techniques to measure intra- and inter-cluster distance. Ideally, we want homogenous clusters that are well separated from other clusters. For this, we are going to base our results on the Elbow plot and the Silhouette score to assess the number of clusters that offers most generalizable results.</p></li>
+<li><p>Second, we will compute key summary statistics per each cluster to derivate human-interpretable wallet-based metrics of risk tolerance, profitability, and trading behavior and trading signals used more broadly. We will also incorporate correlation to external variables as needed.</p></li>
+<li><p>Finally, we plan to average cluster labels and make a manual evaluation of the results. We will labels clusters such that we comprehensively captures the underlying charactersitics, assumptions, and strategies of typical wallet holders comprising every given cluster generated.</p></li>
+</ul>
+<p>For instance, we will evaluate the performance of the <code class="docutils literal notranslate"><span class="pre">KMeans</span></code> baseline clustering algorithm using intra-cluster and extra-cluster distances in the context of an Elbow plot and a Silhouette score plots per an array of plausible number of clusters <span class="math notranslate nohighlight">\(K\)</span>, a required input hyper-parameter when instantiating a <code class="docutils literal notranslate"><span class="pre">KMeans</span></code> model object in <code class="docutils literal notranslate"><span class="pre">sklearn</span></code>. The <code class="docutils literal notranslate"><span class="pre">KMeans</span></code> model with most suitable <span class="math notranslate nohighlight">\(K\)</span> will hereafter be referred to  <em>baseline model</em>. We then repeat this model evaluation process for the alternative models generated and perform model selection.</p>
+</div>
+</div>
+<div class="section" id="iii-discussion-and-conclusion">
+<h2>III. Discussion and Conclusion<a class="headerlink" href="#iii-discussion-and-conclusion" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="baseline-models-results">
+<h3>Baseline Models Results<a class="headerlink" href="#baseline-models-results" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="challenges">
+<h3>Challenges<a class="headerlink" href="#challenges" title="Permalink to this headline">¶</a></h3>
+<p>Throughout this project, we identified some challenges in terms of computation of the data and evaluation of results. We have millions of transactions spread into different tables in a relational database model. The relationships between tables are not simple, since our objective is to aggregate the transactional data to a wallet level. Due to the amount of data, we plan to sample wallets randomly and by transactional counts, thus reducing the computational cost of each iteration of the model.</p>
+<p>In addition, in the database, we only have visibility on how a trader swap tokens. Moreover, there is only data on transactions within the liquidity pool. Therefore, we must find reasonable strategies to aggregate data and create relevant features that capture patterns within the blockchain.</p>
+</div>
+</div>
+<div class="section" id="iv-expected-timeline">
+<h2>IV. Expected Timeline<a class="headerlink" href="#iv-expected-timeline" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Date</p></th>
+<th class="text-align:center head"><p>Milestone</p></th>
+<th class="text-align:right head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><strong>2022-05-06</strong></p></td>
+<td class="text-align:center"><p>Understanding the data</p></td>
+<td class="text-align:right"><p>Connect with partners, Define problem scope and understand data</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><strong>2022-05-12</strong></p></td>
+<td class="text-align:center"><p>Baseline Model</p></td>
+<td class="text-align:right"><p>Build initial master table and conduct feature engineering, Develop modeling pipeline</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><strong>2022-05-20</strong></p></td>
+<td class="text-align:center"><p>Second Model</p></td>
+<td class="text-align:right"><p>Improve on data engineering</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><strong>2022-06-03</strong></p></td>
+<td class="text-align:center"><p>Third Model</p></td>
+<td class="text-align:right"><p>Finalize feature engineering development,Improve model using unsupervised algorithms</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><strong>2022-06-10</strong></p></td>
+<td class="text-align:center"><p>Final Model</p></td>
+<td class="text-align:right"><p>Finalize model by tuning its hyper parameters, Finalize production ready code</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><strong>2022-06-29</strong></p></td>
+<td class="text-align:center"><p>Final report</p></td>
+<td class="text-align:right"><p>Prepare final report, Finalize the documentation</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">DeFi Dashboard: Follow and Forecast the Money</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="eda.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Exploratory Data Analysis</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Berkay Bulut, Ramiro Mejia, Reza Mirzazadeh, Vadim Taskaev<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
