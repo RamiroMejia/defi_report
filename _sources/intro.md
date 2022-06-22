@@ -1,10 +1,11 @@
-# DeFi Dashboard: Follow and Forecast the Money
+# Movie Recommendation System
 
-### UBC-MDS Capstone Project
+## Collaborative filtering Approach 
 
-#### Feature Engineering and Model Selection for Wallet-Based Clustering 
+This project builds a recommendation system based on collaborative filtering approach to predict users' movie preferences and suggest a list of top movies that are likely to be watched. 
 
-Defined Ltd is a startup in the blockchain and de-centralized finance space. Defined is building a public data platform called DeFi dashboard that helps users to query chain data and interact with major blockchains. One of the long-term goals of the company is to create tools to help traders engage with the crypto-currency environment. This project aims to explore and leverage big data collected from major public blockchains. Our main goal is to cluster the wallets based on their summary characteristics, assumptions, and strategies using unsupervised learning techniques.
+For this project the [MovieLens 100K Dataset](https://www.kaggle.com/datasets/prajitdatta/movielens-100k-dataset) from the University of Minnesota is utilized.
+
 
 ```{tableofcontents}
 ```
